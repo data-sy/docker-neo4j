@@ -6,7 +6,7 @@ COPY ./init/ /var/lib/neo4j/import/
 # COPY ./compose-script.sh /var/lib/neo4j/compose-script.sh
 
 USER root
-RUN chown -R neo4j:neo4j /var/lib/neo4j/import/ 
+RUN chown -R neo4j:neo4j /var/lib/neo4j/import/ /data/
 # /var/lib/neo4j/compose-script.sh
 # RUN chmod +x /var/lib/neo4j/compose-script.sh 
 USER neo4j
